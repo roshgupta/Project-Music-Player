@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="shortcut icon" href="./assets/logo@1x.png" type="image/x-icon">
+    <link rel="stylesheet" href="./app/css/style.css">
+    <title>Jazz Music</title>
+</head>
+
+<body>
+    <header class="dfc">
+        <nav>
+            <div class="logo dfc">
+                <img src="./assets/logo@2x.png" alt="Jazz Music Logo" />
+                <div>
+                    <p>Jazz</p>
+                    <p>Music</p>
+                </div>
+            </div>
+
+            <div class="favourites dfc">
+                <p>Favourites</p>
+            </div>
+            <div class="items">
+                <div class="search">
+                    <div class="search_box">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-microphone"></i>
+                    </div>
+
+                </div>
+                <div class="notifications dfc">
+                    <i class="fa fa-bell"></i>
+                </div>
+                <div class="avtar dfc">
+                    <img src="./assets/artist8.png" alt="Avtar">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="body">
+        <main>
+            <div class="carousel-container">
+                <div class="carousel-image carousel-01">
+                    <img src="./assets/Carousel Image/carousel (1).jpeg" alt="Carousel">
+                </div>
+                <div class="carousel-image carousel-02">
+                    <img src="./assets/Carousel Image/carousel (2).jpg" alt="Carousel">
+                </div>
+                <div class="carousel-image carousel-03">
+                    <img src="./assets/Carousel Image/carousel (3).jpg" alt="Carousel">
+                </div>
+                <div class="carousel-image carousel-04">
+                    <img src="./assets/Carousel Image/carousel (4).jpg" alt="Carousel">
+                </div>
+            </div>
+            <div class="latest-release-container">
+                <div class="head">
+                    <h3>Latest Release</h3>
+                </div>
+                <div class="latest-box">
+                    <div class="latest-song">
+                        <div class="song-image dfc">
+                            <div class="latest-song-image">
+                                <img src="./assets/Latest_song/latest (1).jpg" alt="Latest Song">
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <p class="song-name">
+                                Real Eyes
+                            </p>
+                            <p class="song-release-date">
+                                AUG 11, 2019
+                            </p>
+
+                        </div>
+                        <span class="dot">...</span>
+                        <span class="stamp">4:45</span>
+                    </div>
+                    <div class="latest-song">
+                        <div class="song-image dfc">
+                            <div class="latest-song-image">
+                                <img src="./assets/Latest_song/latest (2).jpg" alt="Latest Song">
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <p class="song-name">
+                                Beautiful
+                            </p>
+                            <p class="song-release-date">
+                                SEP 18, 2018
+                            </p>
+
+                        </div>
+                        <span class="dot">...</span>
+                        <span class="stamp">4:45</span>
+                    </div>
+                    <div class="latest-song">
+                        <div class="song-image dfc">
+                            <div class="latest-song-image">
+                                <img src="./assets/Latest_song/latest (3).jpg" alt="Latest Song">
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <p class="song-name">
+                                Filhaal
+                            </p>
+                            <p class="song-release-date">
+                                JUL 11, 2021
+                            </p>
+
+                        </div>
+                        <span class="dot">...</span>
+                        <span class="stamp">4:45</span>
+                    </div>
+                    <div class="latest-song">
+                        <div class="song-image dfc">
+                            <div class="latest-song-image">
+                                <img src="./assets/Latest_song/latest (4).jpg" alt="Latest Song">
+                            </div>
+                        </div>
+                        <div class="song-info">
+                            <p class="song-name">
+                                Bad Boy
+                            </p>
+                            <p class="song-release-date">
+                                AUG 30, 2019
+                            </p>
+
+                        </div>
+                        <span class="dot">...</span>
+                        <span class="stamp">4:45</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="heading">
+                <p class="playlist">My Playlist</p>
+                <div id="queue">
+                    <div class="queue_display">
+                        <p id="queue">Queue</p>
+                        <i class="fa fa-angle-up"> </i>
+                    </div>
+                    <div class="menu dfc dn">
+                        <p><a href="#">Playlists</a></p>
+                        <hr>
+                        <p><a href="#">Favourite Songs</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="song">
+                    <div class="num dfc">
+                        <p>01</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (1).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Worry Bout Us</p>
+                        <p>Rosie Lowei</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>02</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (2).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Bekhayli mei bhi</p>
+                        <p>Newton</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>03</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (3).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Dard de disco</p>
+                        <p>Arvind Kejriwal</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>04</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (4).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Filhaal to tu</p>
+                        <p>Saurabh Jamui</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>05</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (5).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Tujh Bin mai</p>
+                        <p>Arnav Raj</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>06</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (6).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Shape of you</p>
+                        <p>Ed Shereen</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>07</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (7).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Bhai tera rockstar</p>
+                        <p>Ronaldo</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>08</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (8).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Mera Gaana Baja De</p>
+                        <p>Baadsaah</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>09</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (9).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Ham dil de chuke sanam</p>
+                        <p>Kishor Kumar</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>10</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (10).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Bhula dena mujhe</p>
+                        <p>Ashok Kumar</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="song">
+                    <div class="num dfc">
+                        <p>11</p>
+                    </div>
+                    <div class="img dfc">
+                        <div class="image">
+                            <img src="./assets/Thumbnails/song (11).jpg" alt="Thumbnail">
+                        </div>
+                    </div>
+                    <div class="name">
+                        <p>Kaise mai jiyun</p>
+                        <p>Ramdev Ji</p>
+                    </div>
+                    <div class="like dfc">
+                        <i class="like far fa-heart"></i>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+        <div class="player-console-bg">
+            <div class="player-console">
+                <div class="console-song-info">
+                    <div class="song-image dfc">
+                        <div class="image">
+                            <img src="./assets/Latest_song/maxresdefault.jpg" alt="Playing">
+                        </div>
+                    </div>
+                    <div class="song-info">
+                        <p>Imagine by John Lenon</p>
+                        <p>John Lenon</p>
+
+                    </div>
+                    <div class="song-like">
+                        <i class="far fa-heart playing-song-like"></i><svg class="invalid" width="20" height="20"
+                            fill="white" class="bi bi-slash-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                            <path d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="console-control">
+
+                </div>
+                <div class="console-volume-control">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app/js/index.js"></script>
+</body>
+
+</html>

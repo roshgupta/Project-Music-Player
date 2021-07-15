@@ -1,0 +1,135 @@
+.body {
+  width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  main {
+    width: 880px;
+    .carousel-container {
+      width: 850px;
+      height: 300px;
+      margin: auto;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .carousel-image {
+        width: 570px;
+        overflow: hidden;
+        position: absolute;
+        transition: all 1.5s ease-in-out;
+        border-radius: 2px;
+        img {
+          width: 570px;
+        }
+      }
+      .carousel-01 {
+        left: 0px;
+        height: 200px;
+        width: 150px;
+        // opacity: 0.8;
+        filter: blur(2px);
+        z-index: 0;
+      }
+      .carousel-02 {
+        height: 250px;
+        left: 140px;
+        right: 140px;
+        z-index: 1;
+        box-shadow: 2px 2px 40px 40px #0c102764;
+      }
+      .carousel-03 {
+        right: 0px;
+        height: 200px;
+        width: 150px;
+        // opacity: 0.8;
+        filter: blur(2px);
+        z-index: 0;
+      }
+      .carousel-04 {
+        opacity: 0;
+        height: 250px;
+        // width: 150px;
+        left: 140px;
+        right: 140px;
+        z-index: -5;
+      }
+    }
+    .latest-release-container {
+      margin-top: 16px;
+      width: 850px;
+      height: 270px;
+      margin-left: 10px;
+      .head {
+        font-size: 18px;
+      }
+      .latest-box {
+        width: 100%;
+        height: 240px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .latest-song {
+          width: 350px;
+          height: 100px;
+          display: flex;
+          flex: 0 0 auto;
+          justify-content: space-between;
+          margin: 8px 24px 8px 0px;
+          position: relative;
+          .song-image {
+            height: 100%;
+            width: 90px;
+            .latest-song-image {
+              width: 90px;
+              height: 90px;
+              border-radius: 2px;
+              overflow: hidden;
+              img {
+                width: 90px;
+                height: auto;
+              }
+            }
+          }
+          .song-info {
+            height: 100%;
+            width: 200px;
+            margin-right: 40px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding-left: 12px;
+            :nth-child(1) {
+              font-size: 16px;
+              margin-bottom: 4px;
+              font-weight: 600;
+            }
+            :nth-child(2) {
+              font-size: 12px;
+              margin-top: 4px;
+            }
+          }
+          span {
+            position: absolute;
+            display: block;
+          }
+          span.dot {
+            top: 0;
+            right: 5px;
+            line-height: 0.5;
+            font-size: 24px;
+            color: #93a8b3;
+            cursor: pointer;
+          }
+          span.stamp {
+            top: 40px;
+            right: 5px;
+            line-height: 1;
+            font-size: 12px;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

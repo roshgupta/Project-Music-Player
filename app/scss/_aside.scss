@@ -1,0 +1,118 @@
+.body {
+  aside {
+    width: 380px;
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      .playlist {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 4px;
+        margin-left: 4px;
+      }
+      #queue {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .queue_display {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 55px;
+          margin-right: 12px;
+          cursor: pointer;
+          p {
+            font-size: 12px;
+            font-weight: 400;
+            text-align: center;
+            color: #50e3c2;
+          }
+          i {
+            font-weight: 300;
+            &::before {
+              color: #50e3c2;
+            }
+          }
+        }
+        .menu {
+          position: absolute;
+          top: 40px;
+          right: 10px;
+          display: block;
+          width: 170px;
+          height: 70px;
+          background-color: white;
+          padding: 8px 12px;
+          border-radius: 2px;
+          p {
+            height: 50%;
+            padding-left: 10px;
+            a {
+              font-size: 15px;
+              text-decoration: none;
+              color: black;
+            }
+          }
+        }
+      }
+    }
+    .list {
+      margin-top: 16px;
+      .song {
+        display: flex;
+        justify-content: space-between;
+        width: 350px;
+        height: 70px;
+        margin: auto;
+        div {
+          height: 100%;
+        }
+        .num {
+          width: 25px;
+          p {
+            margin-left: 5px;
+          }
+        }
+        .img {
+          width: 55px;
+          .image {
+            width: 50px;
+            height: 50px;
+            border-radius: 3px;
+            box-shadow: 2px 2px 40px 5px #0c102787;
+            overflow: hidden;
+            img {
+              height: 50px;
+            }
+          }
+        }
+        .name {
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          width: 180px;
+          :nth-child(1) {
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 14px;
+          }
+          :nth-child(2) {
+            margin-bottom: 10px;
+            font-size: 12px;
+          }
+        }
+        .like {
+          width: 55px;
+          i {
+            font-size: 24px;
+            &::before {
+              color: #50e3c2;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
