@@ -59,7 +59,6 @@ Javascript, HTML, CSS...
 
 
 
-
 ## 🚀 About Me
 I'm a full stack developer and in a learning phase. So continously expanding my knowledge.
 
