@@ -604,11 +604,124 @@ body .body .player-console-bg .player-console .console-song-info .song-like i::b
 body .body .player-console-bg .player-console .console-control {
   width: 500px;
   background-color: #636161;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .body .player-console-bg .player-console .console-control div {
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+body .body .player-console-bg .player-console .console-control .main-control {
+  height: 80px;
+}
+
+body .body .player-console-bg .player-console .console-control .main-range {
+  text-align: center;
+  height: 60px;
+}
+
+body .body .player-console-bg .player-console .console-control .main-range span {
+  font-size: 12px;
+}
+
+body .body .player-console-bg .player-console .console-control .main-range #song-progress {
+  width: 85%;
+  -webkit-appearance: none;
+  background: #ffffff;
+  /* Otherwise white in Chrome */
+  border-radius: 8px;
+  height: 5px;
+  outline: none;
+  border: none;
+  position: relative;
+}
+
+body .body .player-console-bg .player-console .console-control .main-range #song-progress::-webkit-slider-thumb, body .body .player-console-bg .player-console .console-control .main-range #song-progress::-moz-range-thumb, body .body .player-console-bg .player-console .console-control .main-range #song-progress::-ms-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: white;
+}
+
+body .body .player-console-bg .player-console .console-control .main-range #song-progress::-moz-range-progress {
+  background: linear-gradient(#57c557, #53d053);
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+}
+
+body .body .player-console-bg .player-console .console-control .main-range #song-progress:focus {
+  outline: none;
 }
 
 body .body .player-console-bg .player-console .console-volume-control {
   width: 225px;
-  background-color: #585555;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .body .player-console-bg .player-console .console-volume-control #volume {
+  width: 75px;
+  -webkit-appearance: none;
+  /* Hides the slider so that custom slider can be made */
+  background: #ffffff;
+  /* Otherwise white in Chrome */
+  border-radius: 8px;
+  height: 5px;
+}
+
+body .body .player-console-bg .player-console .console-volume-control #volume::-webkit-slider-thumb, body .body .player-console-bg .player-console .console-volume-control #volume::-moz-range-thumb, body .body .player-console-bg .player-console .console-volume-control #volume::-ms-thumb {
+  -webkit-appearance: none;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: white;
+}
+
+body .body .player-console-bg .player-console .console-volume-control #volume::-moz-range-progress {
+  background-color: #8ece40;
+  height: 100%;
+  border-radius: 50%;
+  border: none;
+}
+
+body .body .player-console-bg .player-console .console-volume-control #volume:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+body .body .player-console-bg .player-console .console-volume-control #volume::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  /* Hides the slider so custom styles can be added */
+  background: white;
+  border-color: transparent;
+  color: transparent;
 }
 
 .dn {
