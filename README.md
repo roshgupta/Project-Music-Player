@@ -1,6 +1,6 @@
 # JAZZ MUSIC PLAYER PROJECT
 
-This is a dummy music player website with zero functionality. It is just a front-end layout, coded for practice shake.
+This is a dummy music player website with zero functionality. It is just a front-end layout, coded for practice sake.
 
 
 ## Check the deployed website here!
